@@ -1,0 +1,92 @@
+/* css by Ronan LB */
+
+:root{
+    --primary:hsl(172, 67%, 45%);
+    --verydark-cyan:hsl(183, 100%, 15%);
+    --dark-grayish-cyan-1:hsl(186, 14%, 43%);
+    --dark-grayish-cyan-2:hsl(184, 14%, 56%);
+    --light-graying-cyan-1:hsl(185, 41%, 84%);
+    --light-graying-cyan-2:hsl(189, 41%, 97%);
+    --white:hsl(0, 0%, 100%);
+}
+
+body{
+    background-color:var(--light-graying-cyan-1);
+    font-family: 'Space Mono', monospace;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{font-size: 1.5em;text-transform: uppercase;letter-spacing: .4em;color:var(--verydark-cyan);}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.main-container{
+    background-color: var(--white);
+    border-radius: 2em;
+    padding:10%;
+    width:85%;
+}
+.title{
+    color:var(--dark-grayish-cyan-1);
+    font-weight: 700;
+    margin-botto
+}
+
+input[type=text]{
+    width: 100%;
+    height:3em;
+    border:none;
+    background-color: var(--light-graying-cyan-2);
+}
+.bloc{
+    margin-bottom: 2em;
+}
+.tip-btn{
+    padding:.2em .8em;
+    margin:.3em;
+    font-size: 1.5em;
+    font-family: 'Space Mono', monospace;
+    font-weight: 500;
+    background-color: var(--verydark-cyan);
+    color:var(--white);
+    border:none;
+    border-radius: .2em;
+}
+.resume{
+    background-color:var(--verydark-cyan);
+    border-radius: 1em;
+    padding:2em 1em;
+}
+.resume .title{
+    color:var(--white);
+}
+.grayish{
+    color:var(--dark-grayish-cyan-2);
+    font-size: .8em;
+}
+.amount{
+    font-size: 2em;
+    font-weight: 700;
+    color:var(--primary);
+}
+.resume input[type=button]{
+    padding:.2em .8em;
+    margin:.3em;
+    font-size: 1.5em;
+    font-family: 'Space Mono', monospace;
+    font-weight: 500;
+    background-color: var(--primary);
+    color:var(--verydark-cyan);
+    border:none;
+    border-radius: .2em;
+    width:100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}

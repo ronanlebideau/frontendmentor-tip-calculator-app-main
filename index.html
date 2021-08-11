@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -16,25 +21,49 @@
 </head>
 <body>
 
-  Bill
+  <h1>Spli<br>tter</h1>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <div class="main-container">
+    <!-- bill form -->
+    <div class="bloc bill">
+      <label class="title" for="bill">Bill</label><br>
+      <input type="text" name="bill" id="bill" required value="0">
+    </div>
+    <!-- end bill form -->
+    <!-- select tip % form -->
+    <div class="bloc tip">
+      <label class="title" for="bill">Select Tip %</label><br>
+      <input type="button" value="5%" class="tip-btn">
+      <input type="button" value="10%" class="tip-btn">
+      <input type="button" value="15%" class="tip-btn">
+      <input type="button" value="25%" class="tip-btn">
+      <input type="button" value="50%" class="tip-btn">
+      <input type="button" value="Custom" class="tip-btn">
+    </div>
+    <!-- end selector tip % form -->
+    <!-- number of people form -->
+    <div class="bloc people">
+      <label class="title" for="bill">Number of People</label><br>
+      <input type="text" name="people" id="people" required value="0">
+    </div>
+    <!-- end number of people form -->
+    <!-- resume -->
+    <div class="bloc resume">
+      <!-- row 1 -->
+      <div class="row">
+        <div class="title">Tip Amount <br> <span class="grayish">/ person</span></div>
+      <div class="amount">$4.27</div>
+      </div>
+      <!-- row 2 -->
+      <div class="row">
+        <div class="title">Total <br> <span class="grayish">/ person</span></div>
+      <div class="amount">$32.79</div>
+      </div>
+      <input class="large" type="button" value="Reset">
+    </div>
+    <!-- end resume -->
 
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
